@@ -8,6 +8,7 @@ gem 'rails', '3.2.14'
 gem 'sqlite3'
 
 gem 'pry-rails'
+gem 'rails_admin'
 
 group :development do
   gem 'pry-rails'
@@ -40,3 +41,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise"

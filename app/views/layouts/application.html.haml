@@ -12,6 +12,10 @@
       JAMES ROY POULTER
       %a{:href => "http://jamesroypoulter.com"}
         %img{:alt => "James Roy Poulter", :src => "logo.png"}/
+
+    %p.notice= notice
+    %p.alert= alert
+    = yield
+
     #sidebar
       = render 'layouts/sidebar'
-    = yield

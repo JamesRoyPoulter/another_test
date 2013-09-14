@@ -1,6 +1,14 @@
 Jamesroypoulter::Application.routes.draw do
-  resources :homes
+  devise_for :users
 
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  resources :videos
+
+
+  resources :portfolios
+
+  root to: 'videos#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
