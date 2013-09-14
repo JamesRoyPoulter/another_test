@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130914165421) do
+ActiveRecord::Schema.define(:version => 20130914171312) do
 
   create_table "homes", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(:version => 20130914165421) do
   end
 
   create_table "portfolios", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "Title"
+    t.string   "Description"
+    t.string   "Image"
+    t.string   "Item_link"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
@@ -57,6 +61,8 @@ ActiveRecord::Schema.define(:version => 20130914165421) do
   create_table "videos", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "Title"
+    t.string   "Video_link"
   end
 
 end
