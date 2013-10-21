@@ -24,9 +24,6 @@ gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
 gem 'haml-rails'
 
-
-gem 'jquery-rails'
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
